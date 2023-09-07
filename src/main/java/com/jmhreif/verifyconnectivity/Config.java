@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 
+// tag::option2[]
 @Configuration
 public class Config implements CommandLineRunner {
     final Driver driver;
@@ -17,3 +18,4 @@ public class Config implements CommandLineRunner {
         driver.verifyConnectivity();
     }
 }
+// end::option2[]
