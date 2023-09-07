@@ -1,0 +1,11 @@
+= Verify Connectivity to Neo4j from Spring Boot Application
+
+The reason we should or might want to test a Neo4j database connection is because setting the credentials in the `application.properties` file does not actually test the connection. This needs to be done at runtime because they aren't config properties.
+
+There are a few different ways to go about testing a Neo4j database connection from a Spring Boot application:
+
+1. Write application functionality (domain, repository, controller classes) that utilize the connection.
+2. Use a CommandLineRunner with the driver bean and use the `verifyConnectivity()` method.
+3. Write a test for that uses the `verifyConnectivity()` method.
+
+This repository accompanies a blog post (link coming soon) that explains the code.
